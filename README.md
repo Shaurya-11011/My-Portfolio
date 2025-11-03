@@ -68,6 +68,6 @@ Let’s build something amazing together!
 
 💼 LinkedIn : https://www.linkedin.com/in/shaurya-jain-003a90253/
 
-📧 shauryajn101@gmail.com
+📧 Gmail : shauryajn101@gmail.com
 
 🐙 GitHub : https://github.com/Shaurya-11011
