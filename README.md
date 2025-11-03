@@ -1,9 +1,9 @@
-#🌐 My Portfolio
+🌐 My Portfolio
 
 Welcome to my personal React Portfolio, a digital space where creativity meets code!
 This site showcases my projects, skills, and journey as a developer.
 
-#🚀 Features
+🚀 Features
 
 ✨ Sleek UI – Clean, modern, and minimal design
 ⚡ Fast & Responsive – Works seamlessly across all devices
@@ -11,7 +11,7 @@ This site showcases my projects, skills, and journey as a developer.
 🧠 Showcase Section – Highlighting my best projects and achievements
 📫 Contact Me – Easy ways to connect and collaborate
 
-#🛠️ Tech Stack
+🛠️ Tech Stack
 
 Frontend: React.js, HTML5, CSS3, JavaScript (ES6+)
 
@@ -21,12 +21,12 @@ Version Control: Git & GitHub
 
 Deployment: GitHub Pages
 
-#You can check out this site and it'll be live at:
+You can check out this site and it'll be live at:
 
 👉 https://my-portfolio-11011.vercel.app/
 
 
-#🧑‍💻 Getting Started
+🧑‍💻 Getting Started
 
 Clone this repository and get it running locally!
 
@@ -62,7 +62,7 @@ npm run deploy
 This portfolio was built not just to showcase my work, but to reflect who I am as a developer,
 curious, creative, and always learning something new every day.
 
-#📬 Connect with Me
+📬 Connect with Me
 
 Let’s build something amazing together!
 
