@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,16 +12,23 @@ function App() {
     <div className="min-h-screen bg-black text-gray-100">
       <Navbar />
       <main>
-        <section id="home" className="pt-20">
+        {/* Home Section - Matches #home */}
+        <section id="home" name="home" className="pt-20">
           <Home />
         </section>
-        <section id="about" className="py-20 md:py-32 bg-gray-900">
+        
+        {/* About Section - Matches #about */}
+        <section id="about" name="about" className="py-20 md:py-32 bg-gray-900">
           <About />
         </section>
-        <section id="projects" className="py-20 md:py-32 bg-gray-950">
+        
+        {/* Projects Section - Matches #projects */}
+        <section id="projects" name="projects" className="py-20 md:py-32 bg-gray-950">
           <Projects />
         </section>
-        <section id="contact" className="py-20 md:py-32 bg-gray-900">
+        
+        {/* Contact Section - Matches #contact */}
+        <section id="contact" name="contact" className="py-20 md:py-32 bg-gray-900">
           <Contact />
         </section>
       </main>

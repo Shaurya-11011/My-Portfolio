@@ -45,10 +45,11 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="container mx-auto px-6 py-12 md:py-24">
+    <section id="projects" className="container mx-auto px-6 py-12 md:py-24">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
         Featured <span className="text-cyan-400">Projects</span>
       </h2>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
@@ -57,6 +58,7 @@ const Projects = () => {
           >
             <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
             <p className="text-gray-300 mb-6">{project.description}</p>
+
             <div className="flex flex-wrap gap-2 mb-6">
               {project.tech.map((tech, i) => (
                 <span
@@ -67,6 +69,7 @@ const Projects = () => {
                 </span>
               ))}
             </div>
+
             {project.link && (
               <a
                 href={project.link}
@@ -80,6 +83,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
       <div className="text-center mt-12">
         <a
           href="#contact"
@@ -88,7 +92,7 @@ const Projects = () => {
           Want to see more? Let’s talk →
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

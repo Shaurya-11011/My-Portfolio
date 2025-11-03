@@ -5,26 +5,24 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', path: '#home' },
-    { name: 'About', path: '#about' },
-    { name: 'Projects', path: '#projects' },
-    { name: 'Contact', path: '#contact' },
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Contact', id: 'contact' },
   ];
 
-  // JS Scroll Function - Smooth scroll to section ID
-  const scrollToSection = (e, sectionId) => {
-    e.preventDefault(); // Stop default anchor jump
-    const element = document.querySelector(sectionId);
-    if (element) {
-      // Offset for fixed navbar (subtract 100px)
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 100;
+  // ✅ Smooth scroll function using element ID
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      const offsetTop = section.offsetTop - 80; // adjust for fixed navbar height
       window.scrollTo({
         top: offsetTop,
-        behavior: 'smooth' // Smooth animation
+        behavior: 'smooth',
       });
     }
-    // Close mobile menu if open
-    setIsOpen(false);
+    setIsOpen(false); // Close mobile menu after click
   };
 
   return (
@@ -38,13 +36,12 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a
-                href={link.path}
-                onClick={(e) => scrollToSection(e, link.path)} // JS scroll handler
-                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium cursor-pointer"
+              <button
+                onClick={(e) => handleScroll(e, link.id)}
+                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium cursor-pointer bg-transparent border-none outline-none"
               >
                 {link.name}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -85,14 +82,13 @@ const Navbar = () => {
         <div className="md:hidden bg-black/95 border-t border-gray-800">
           <div className="px-6 py-4 space-y-4">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.name}
-                href={link.path}
-                onClick={(e) => scrollToSection(e, link.path)} // JS scroll handler
-                className="block text-lg text-gray-300 hover:text-cyan-400 transition-colors cursor-pointer"
+                onClick={(e) => handleScroll(e, link.id)}
+                className="block text-lg text-gray-300 hover:text-cyan-400 transition-colors cursor-pointer bg-transparent border-none outline-none"
               >
                 {link.name}
-              </a>
+              </button>
             ))}
           </div>
         </div>
