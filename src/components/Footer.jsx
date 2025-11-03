@@ -10,7 +10,7 @@ const Footer = () => {
         </p>
         <div className="flex justify-center gap-6 mt-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Shaurya-11011"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-cyan-400 transition-colors"
@@ -18,7 +18,7 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/shaurya-jain-003a90253"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-cyan-400 transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
             LinkedIn
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="mailto/shauryajn101@gmail.com"
             className="text-gray-400 hover:text-cyan-400 transition-colors"
           >
             Email

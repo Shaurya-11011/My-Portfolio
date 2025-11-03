@@ -19,7 +19,7 @@ const Contact = () => {
             Email Me
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Shaurya-11011"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-cyan-600/20 hover:border-cyan-500 transition-all duration-300"
@@ -27,7 +27,7 @@ const Contact = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/shaurya-jain-003a90253"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-cyan-600/20 hover:border-cyan-500 transition-all duration-300"

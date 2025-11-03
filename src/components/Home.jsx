@@ -3,16 +3,9 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6">
-      <div className="mb-8">
-        <img
-          src="/assets/profile-pic.jpg" // Put your photo in /public/assets/
-          alt="Your Name"
-          className="w-32 h-32 rounded-full border-4 border-cyan-500 shadow-lg mx-auto mb-6 object-cover"
-        />
-      </div>
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative">
       <h1 className="text-4xl md:text-6xl font-bold mb-4">
-        Hi, I'm <span className="text-cyan-400">Your Name</span>
+        Hi, I'm <span className="text-cyan-400">Shaurya</span>
       </h1>
       <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
         Full-stack developer passionate about building elegant, user-centric web experiences that blend creativity with clean code.
@@ -25,7 +18,7 @@ const Home = () => {
           View My Work
         </a>
         <a
-          href="/assets/resume.pdf" // Add your resume in /public/assets/
+          href="/assets/resume.pdf"
           download
           className="px-8 py-3 border-2 border-gray-600 text-gray-300 font-semibold rounded-full hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300"
         >
@@ -33,11 +26,11 @@ const Home = () => {
         </a>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 animate-bounce">
+      {/* Scroll indicator - smaller and positioned at bottom */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce opacity-70">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 text-gray-500"
+          className="h-5 w-5 text-gray-400"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

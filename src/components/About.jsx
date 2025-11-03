@@ -24,11 +24,6 @@ const About = () => {
           </div>
         </div>
         <div className="md:w-1/2">
-          <img
-            src="/assets/about-bg.jpg" // Optional background image
-            alt="About Me"
-            className="rounded-2xl shadow-2xl w-full object-cover"
-          />
         </div>
       </div>
     </div>
