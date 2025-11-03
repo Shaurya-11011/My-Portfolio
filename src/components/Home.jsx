@@ -1,4 +1,4 @@
-// src/components/Home.jsx
+// src/components/Home.jsx (full file, with resume buttons added)
 import React from 'react';
 
 const Home = () => {
@@ -10,23 +10,36 @@ const Home = () => {
       <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
         Full-stack developer passionate about building elegant, user-centric web experiences that blend creativity with clean code.
       </p>
-      <div className="flex flex-col sm:flex-row gap-6 mt-10">
+      <div className="flex flex-col sm:flex-row gap-6 mt-10 mb-8"> {/* Existing buttons */}
         <a
           href="#projects"
           className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-cyan-500/25 transform hover:-translate-y-1 transition-all duration-300"
         >
           View My Work
         </a>
+      </div>
+
+      {/* New Resume Buttons - Open in new tab */}
+      <div className="flex flex-col sm:flex-row gap-4 mb-8">
         <a
-          href="/assets/resume.pdf"
-          download
-          className="px-8 py-3 border-2 border-gray-600 text-gray-300 font-semibold rounded-full hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300"
+          href="/assets/resume-technical.pdf"  // Replace with your first resume filename
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-2 bg-gradient-to-r from-green-500 to-blue-600 text-white font-medium rounded-lg shadow-md hover:shadow-green-500/25 transform hover:-translate-y-1 transition-all duration-300 text-center"
         >
-          Download Resume
+          View Technical Resume
+        </a>
+        <a
+          href="/assets/resume-business.pdf"  // Replace with your second resume filename
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-medium rounded-lg shadow-md hover:shadow-purple-500/25 transform hover:-translate-y-1 transition-all duration-300 text-center"
+        >
+          View Business Resume
         </a>
       </div>
 
-      {/* Scroll indicator - smaller and positioned at bottom */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce opacity-70">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -11,11 +11,27 @@ const Navbar = () => {
     { name: 'Contact', path: '#contact' },
   ];
 
+  // JS Scroll Function - Smooth scroll to section ID
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault(); // Stop default anchor jump
+    const element = document.querySelector(sectionId);
+    if (element) {
+      // Offset for fixed navbar (subtract 100px)
+      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth' // Smooth animation
+      });
+    }
+    // Close mobile menu if open
+    setIsOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-          Shaurya  {/* Replace with your name */}
+          Shaurya
         </h1>
 
         {/* Desktop Menu */}
@@ -24,7 +40,8 @@ const Navbar = () => {
             <li key={link.name}>
               <a
                 href={link.path}
-                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium"
+                onClick={(e) => scrollToSection(e, link.path)} // JS scroll handler
+                className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium cursor-pointer"
               >
                 {link.name}
               </a>
@@ -71,8 +88,8 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className="block text-lg text-gray-300 hover:text-cyan-400 transition-colors"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => scrollToSection(e, link.path)} // JS scroll handler
+                className="block text-lg text-gray-300 hover:text-cyan-400 transition-colors cursor-pointer"
               >
                 {link.name}
               </a>

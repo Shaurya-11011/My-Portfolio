@@ -1,9 +1,7 @@
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles (from before) */
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +27,10 @@ button {
   outline: none;
 }
 
-/* Scrollbar (dark theme) */
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -41,9 +42,4 @@ button {
 ::-webkit-scrollbar-thumb {
   background: #555;
   border-radius: 4px;
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
 }

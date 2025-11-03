@@ -13,7 +13,7 @@ const Contact = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
           <a
-            href="mailto:youremail@example.com"
+            href="shauryajn101@gmail.com"
             className="px-8 py-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-cyan-600/20 hover:border-cyan-500 transition-all duration-300"
           >
             Email Me
