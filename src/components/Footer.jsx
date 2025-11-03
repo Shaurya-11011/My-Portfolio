@@ -8,7 +8,9 @@ const Footer = () => {
         <p className="text-gray-400">
           © {new Date().getFullYear()} Shaurya. Built with React & ❤️.
         </p>
+
         <div className="flex justify-center gap-6 mt-4">
+          {/* GitHub */}
           <a
             href="https://github.com/Shaurya-11011"
             target="_blank"
@@ -17,6 +19,8 @@ const Footer = () => {
           >
             GitHub
           </a>
+
+          {/* LinkedIn */}
           <a
             href="https://linkedin.com/in/shaurya-jain-003a90253"
             target="_blank"
@@ -25,8 +29,12 @@ const Footer = () => {
           >
             LinkedIn
           </a>
+
+          {/* Gmail compose link */}
           <a
-            href="mailto/shauryajn101@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shauryajn101@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-400 hover:text-cyan-400 transition-colors"
           >
             Email

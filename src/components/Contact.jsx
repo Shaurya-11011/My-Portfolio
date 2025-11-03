@@ -15,11 +15,14 @@ const Contact = () => {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
           <a
-            href="mailto:shauryajn101@gmail.com"
-            className="px-8 py-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-cyan-600/20 hover:border-cyan-500 transition-all duration-300"
-          >
-            Email Me
-          </a>
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=shauryajn101@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-4 bg-gray-800 border border-gray-700 rounded-full hover:bg-cyan-600/20 hover:border-cyan-500 transition-all duration-300"
+>
+  Email Me
+</a>
+
 
           <a
             href="https://github.com/Shaurya-11011"
