@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-950 py-8 border-t border-gray-800">
       <div className="container mx-auto px-6 text-center">
         <p className="text-gray-400">
-          © {new Date().getFullYear()} Your Name. Built with React & ❤️.
+          © {new Date().getFullYear()} Shaurya. Built with React & ❤️.
         </p>
         <div className="flex justify-center gap-6 mt-4">
           <a
