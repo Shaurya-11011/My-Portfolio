@@ -1,6 +1,6 @@
 🌐 My Portfolio
 
-Welcome to my personal React Portfolio — a digital space where creativity meets code!
+Welcome to my personal React Portfolio, a digital space where creativity meets code!
 This site showcases my projects, skills, and journey as a developer.
 
 🚀 Features
@@ -59,7 +59,7 @@ npm run deploy
 
 💡 Inspiration
 
-This portfolio was built not just to showcase my work, but to reflect who I am as a developer —
+This portfolio was built not just to showcase my work, but to reflect who I am as a developer,
 curious, creative, and always learning something new every day.
 
 📬 Connect with Me
